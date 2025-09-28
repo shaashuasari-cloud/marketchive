@@ -264,4 +264,14 @@ CSS PER SECTION
     background: url(../image/kaitlyn-baker-vZJdYl5JVXY-unsplash.jpg) no-repeat;
     background-size: cover;
     background-position: center;
+
+}
+
+.berita-section{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(../image/jonathan-gong-izRQ870yJO8-unsplash.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
 }
