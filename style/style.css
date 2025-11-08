@@ -288,3 +288,44 @@ CSS PER SECTION
         .stat-label { color: #666; }
         .testimonial { background: white; border-radius: 15px; padding: 30px; text-align: center; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-left: 5px solid #5B84A8;}
 
+ .video-section {
+            display: grid;
+            grid-template-columns: 60px 60px; /* Dua kolom sama lebar */
+            gap: 20px;
+            max-width: 100px; /* Kurangi agar tidak terlalu besar di laptop */
+            margin: 0 auto;
+        }
+
+.video-container {
+            position: relative;
+            padding-bottom: 100%; /* Aspect ratio 9:18 (18/9 * 100% = 200%) */
+            height: 0;
+            overflow: hidden;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        h2 {
+            text-align: center;
+            margin: 10px 0;
+            font-size: 14px;
+        }
+        /* Media query untuk layar kecil (mobile) */
+        @media (max-width: 300px) {
+            .video-section {
+                grid-template-columns: 1fr; /* Satu kolom (atas-bawah) di mobile */
+            }
+        }
